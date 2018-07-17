@@ -3,29 +3,29 @@
 #######################################
 
 #######################################
-# Instance				(KEYWORD1)
+# Instance	(KEYWORD1)
 #######################################
 
-RL01					 KEYWORD1
+RL01	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-begin   				KEYWORD2
-setFrequency			KEYWORD2
-setTxPower				KEYWORD2
+begin	KEYWORD2
+setFrequency	KEYWORD2
+setTxPower	KEYWORD2
 waitAvailableTimeout	KEYWORD2
-setHeaders				KEYWORD2
-recv					KEYWORD2
-lastRssi				KEYWORD2
-send					KEYWORD2
-setThisAddress			KEYWORD2
-setHeaderFrom			KEYWORD2
-setHeaderTo				KEYWORD2
+setHeaders	KEYWORD2
+recv	KEYWORD2
+lastRssi	KEYWORD2
+send	KEYWORD2
+setThisAddress	KEYWORD2
+setHeaderFrom	KEYWORD2
+setHeaderTo	KEYWORD2
 
 #######################################
-# Constants 			(LITERAL1)
+# Constants	(LITERAL1)
 #######################################
 
 
