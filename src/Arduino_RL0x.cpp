@@ -5,7 +5,7 @@
 	The board uses I2C for communication.
 */
 
-#include "xRL0X.h"
+#include "Arduino_RL0x.h"
 
 SC18IS602 i2cspi = SC18IS602(SC18IS602_ADDRESS_111);
 

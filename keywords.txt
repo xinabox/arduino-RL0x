@@ -1,12 +1,12 @@
 #######################################
-# Syntax Coloring Map For RL01
+# Syntax Coloring Map For Arduino_RL0x
 #######################################
 
 #######################################
 # Instance	(KEYWORD1)
 #######################################
 
-RL01	KEYWORD1
+RL0X	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
