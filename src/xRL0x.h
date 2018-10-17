@@ -6,8 +6,8 @@
 	
 	Credit must be given to the RadioHead Library. It was a major contributor for building this library.
 */
-#ifndef Arduino_RL0x_h
-#define Arduino_RL0x_h
+#ifndef xRL0x_h
+#define xRL0x_h
 
 // Include File Headers
 #include "xCore.h"

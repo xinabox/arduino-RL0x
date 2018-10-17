@@ -23,7 +23,7 @@
 *************************************************************/
 
 #include <xCore.h>
-#include <arduino-RL0x.h>
+#include <xRL0x.h>
 
 #define RL03_FREQ 915.0
 
