@@ -12,7 +12,7 @@
 // Include File Headers
 #include "xCore.h"
 #include "SC18IS602.h"
-#include <spi.h>
+#include <SPI.h>
 
 //Max time in milliseconds to wait for TX to finish
 #define radioSendTimeout 3000
