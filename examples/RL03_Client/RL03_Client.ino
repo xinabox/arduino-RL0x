@@ -15,11 +15,6 @@
 
   The sensor communicates over the I2C Bus.
 
-  ------------------------TIPS--------------------------
-  Change this line ----->Wire.begin(2,14);
-  to this      ----->Wire.begin();
-  to allow this sensor to communicate other cpus
-
 *************************************************************/
 
 #include <xCore.h>
@@ -32,22 +27,20 @@ void setup() {
   Serial.begin(115200);
 
   // Set the RGB Pin directions
-  pinMode(CW01_RED, OUTPUT);
-  pinMode(CW01_GREEN, OUTPUT);
-  pinMode(CW01_BLUE, OUTPUT);
+  pinMode(LED_RED, OUTPUT);
+  pinMode(LED_GREEN, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
 
   // Start the I2C Comunication
-  Wire.pins(2, 14);
   Wire.begin();
-  Wire.setClockStretchLimit(15000);
 
-  if (!RL0X.begin()) { // <-- enter radio name here
+  if (!RL0X.begin()) {
     Serial.println("Check the connector to CR01");
     while (1) {
       // Flash RED to indicate failure
-      digitalWrite(CW01_RED, HIGH);
+      digitalWrite(LED_RED, HIGH);
       delay(100);
-      digitalWrite(CW01_RED, LOW);
+      digitalWrite(LED_RED, LOW);
       delay(100);
     }
   } else {
@@ -61,7 +54,7 @@ void setup() {
 void loop() {
   Serial.println("Sending to RL0X Server");
 
-  digitalWrite(CW01_GREEN, HIGH);
+  digitalWrite(LED_GREEN, HIGH);
 
   uint8_t data[] = "Hello World!";
   delay(100);
@@ -80,7 +73,7 @@ void loop() {
       Serial.println("recv failed");
     }
   } else {
-    digitalWrite(CW01_GREEN, LOW);
+    digitalWrite(LED_GREEN, LOW);
     Serial.println("No reply, is the RL01 server running ?");
   }
 }
